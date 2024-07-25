@@ -89,20 +89,11 @@
         <mxCell id="f3vR9Rkkpv1uvMwhN0g--19" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
           <mxGeometry x="75" y="414" width="30" height="14" as="geometry" />
         </mxCell>
-        <mxCell id="f3vR9Rkkpv1uvMwhN0g--20" value="&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Success Token&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
-          <mxGeometry x="280" y="268" width="210" height="30" as="geometry" />
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--20" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Return Products/null" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
+          <mxGeometry x="265" y="268" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="f3vR9Rkkpv1uvMwhN0g--21" value="&lt;b&gt;Authentication&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
-          <mxGeometry x="380" y="230" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="f3vR9Rkkpv1uvMwhN0g--22" value="Enter OTP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
-          <mxGeometry x="135" y="310" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="f3vR9Rkkpv1uvMwhN0g--23" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="80" y="481" as="sourcePoint" />
-            <mxPoint x="600" y="481" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--21" value="Get All Products(if authorized)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
+          <mxGeometry x="345" y="230" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="f3vR9Rkkpv1uvMwhN0g--24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.133;entryY=1.12;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="f3vR9Rkkpv1uvMwhN0g--1" target="f3vR9Rkkpv1uvMwhN0g--10">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -119,14 +110,38 @@
         <mxCell id="f3vR9Rkkpv1uvMwhN0g--26" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
           <mxGeometry x="330" y="400" width="30" height="14" as="geometry" />
         </mxCell>
-        <mxCell id="f3vR9Rkkpv1uvMwhN0g--27" value="Display success or failure message" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--27" value="Display Product or failure message" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
           <mxGeometry x="110" y="392" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="f3vR9Rkkpv1uvMwhN0g--28" value="Verify OTP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="830" y="508" width="80" height="30" as="geometry" />
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--33" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=11;endSize=3.13;endWidth=0;" edge="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="270" as="sourcePoint" />
+            <mxPoint x="80" y="270" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="f3vR9Rkkpv1uvMwhN0g--29" value="Success Token/ null" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="825" y="538" width="130" height="30" as="geometry" />
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--34" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Display All Products or failure message&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
+          <mxGeometry x="20" y="246" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--30" value="(Auth) View Products" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="f3vR9Rkkpv1uvMwhN0g--1">
+          <mxGeometry x="130" y="200" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--28" value="Get a product by id (if authorized)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="508" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--29" value="Return specified product/ null" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="800" y="538" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--32" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.269;exitY=0.067;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="f3vR9Rkkpv1uvMwhN0g--20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="420" as="sourcePoint" />
+            <mxPoint x="530" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f3vR9Rkkpv1uvMwhN0g--36" value="(Auth) View a Product" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="478" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
