@@ -310,6 +310,15 @@
         <mxCell id="e2vo9jhdTTj7LxzaaPuy-17" value="&lt;font color=&quot;#007fff&quot;&gt;&lt;b&gt;using REST&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="467.03" y="567.1899999999999" width="90" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="e2vo9jhdTTj7LxzaaPuy-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="420" as="sourcePoint" />
+            <mxPoint x="180" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2vo9jhdTTj7LxzaaPuy-19" value="&lt;b&gt;VPS&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="155" y="473" width="50" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
