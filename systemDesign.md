@@ -16,9 +16,10 @@
 
 ![img deploymentDiagram](Diagrams/deploymentDiagram.drawio.png)
 
-### Component Descriptions
+## Component Descriptions
 
-User Service
+### User Service
+
 Responsibilities: Manages user accounts, handles authentication, and stores user information.
 Database: Stores user data (e.g., user profiles, authentication tokens).
 Endpoints:
@@ -26,7 +27,8 @@ POST /register: Register a new user.
 POST /login: Authenticate a user.
 GET /profile: Retrieve user profile.
 
-Product Service
+### Product Service
+
 Responsibilities: Manages product listings, stores product details, and handles inventory management.
 Database: Stores product data (e.g., product descriptions, prices, stock levels).
 Endpoints:
@@ -36,7 +38,8 @@ POST /products: Add a new product.
 PUT /products/{id}: Update product details.
 DELETE /products/{id}: Delete a product.
 
-Order Service
+### Order Service
+
 Responsibilities: Manages orders, handles transactions, and coordinates with payment and notification services.
 Database: Stores order data (e.g., order details, transaction status).
 Endpoints:
@@ -63,10 +66,12 @@ Circuit Breakers: Prevent cascading failures by stopping attempts to communicate
 Retries: Automatically retry failed operations with exponential backoff.
 Fallbacks: Provide alternative responses or actions when a service is down.
 
-Scaling
+### Scaling
+
 Horizontal Scaling: Scale out by adding more instances of each service.
 Auto-scaling: Automatically adjust the number of running instances based on load.
 Load Balancers: Distribute incoming requests across multiple instances of a service to ensure even load distribution.
 
-Conclusion
+### Conclusion
+
 This system design for a scalable microservice-based e-commerce application provides a robust architecture that ensures data consistency, fault tolerance, and scalability. By using REST, gRPC, and messaging for inter-service communication, and incorporating best practices for fault tolerance and scaling, this design aims to meet the needs of a growing e-commerce platform.
