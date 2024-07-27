@@ -2,19 +2,19 @@
 
 ## Component Diagram
 
-![img componentDiagram](<Diagrams/eCommerceAppDesign.drawio (1).png>)
+![img componentDiagram](<diagrams/eCommerceAppDesign.drawio (1).png>)
 
 ## Sequence Diagrams
 
-![imgA regLogSequence](Diagrams/regLoginSequence.drawio.png)
+![imgA regLogSequence](diagrams/regLoginSequence.drawio.png)
 
-![imgB productSequence](Diagrams/ProductServiceSequence.drawio.png)
+![imgB productSequence](diagrams/ProductServiceSequence.drawio.png)
 
-![imgC orderSequence](<Diagrams/OrderPlacementSequence.drawio (1).png>)
+![imgC orderSequence](<diagrams/OrderPlacementSequence.drawio (1).png>)
 
 ## Deployment Diagram
 
-![img deploymentDiagram](Diagrams/deploymentDiagram.drawio.png)
+![img deploymentDiagram](diagrams/deploymentDiagram.drawio.png)
 
 ## Component Descriptions
 
