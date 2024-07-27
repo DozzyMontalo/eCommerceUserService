@@ -1,16 +1,21 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
-import { connect, Channel, Connection } from 'amqplib';
+import { ConfigService } from '@nestjs/config';
+import * as amqp from 'amqplib';
 
 @Injectable()
 export class MessagingService implements OnModuleInit {
+  private connection: amqp.Connection;
+  private channel: amqp.Channel;
   private readonly logger = new Logger(MessagingService.name);
-  private channel: Channel;
+
+  constructor(private configService: ConfigService) {}
 
   async onModuleInit() {
+    const rabbitMqUrl = this.configService.get<string>('RABBITMQ_URL');
     try {
-      const connection: Connection = await connect(process.env.RABBITMQ_URL);
-      this.channel = await connection.createChannel();
-      await this.channel.assertQueue('emailQueue', { durable: true });
+      this.connection = await amqp.connect(rabbitMqUrl);
+      this.channel = await this.connection.createChannel();
+      this.logger.log('Connected to RabbitMQ');
     } catch (error) {
       this.logger.error('Failed to connect to RabbitMQ', error.stack);
     }
@@ -21,20 +26,33 @@ export class MessagingService implements OnModuleInit {
       this.logger.error('Channel is not available');
       return;
     }
-    this.channel.sendToQueue('emailQueue', Buffer.from(message), { persistent: true });
-    this.logger.log('Message sent to emailQueue');
+
+    try {
+      await this.channel.assertQueue('emails', { durable: true });
+      this.channel.sendToQueue('emails', Buffer.from(message));
+      this.logger.log('Message sent to queue');
+    } catch (error) {
+      this.logger.error('Failed to send message to queue', error.stack);
+    }
   }
 
-  async consumeQueue(callback: (msg: any) => void) {
+  async consumeQueue(callback: (msg: amqp.Message) => void) {
     if (!this.channel) {
       this.logger.error('Channel is not available');
       return;
     }
-    this.channel.consume('emailQueue', (msg) => {
-      if (msg !== null) {
-        callback(msg);
-        this.channel.ack(msg);
-      }
-    });
+
+    try {
+      await this.channel.assertQueue('emails', { durable: true });
+      this.channel.consume('emails', (msg) => {
+        if (msg !== null) {
+          callback(msg);
+          this.channel.ack(msg);
+        }
+      });
+      this.logger.log('Consuming messages from queue');
+    } catch (error) {
+      this.logger.error('Failed to consume messages from queue', error.stack);
+    }
   }
 }
