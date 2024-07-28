@@ -71,8 +71,11 @@ $ yarn run test
 
 # e2e tests
 
+```
 yarn run pretest:e2e
+
 yarn run test:e2e
+```
 
 # test coverage
 
