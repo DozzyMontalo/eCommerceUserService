@@ -21,23 +21,25 @@ yarn install
 
 ## setup
 
-```Environment variables
+Environment variables
 DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database>?schema=public
 RABBITMQ_URL=amqp://<username>:<password>@<host>:<port>
 JWT_SECRET="unknown"
 SENDGRID_API_KEY=SG.xxxxxxxx.yyyyyyyy
+
 ```
 
-```Running the API with docker
+Running the API with docker
 docker-compose up -d
 
 ```
 
-```Run migration and seed the database
+Run migration and seed the database
 npx prisma migrate dev
+
 ```
 
-```start in prod
+start in prod
 docker run --env-file .env -p 3000:3000 nestjs-app
 ```
 
@@ -61,14 +63,21 @@ $ yarn run start:prod
 
 ```
 
-```Test
+### Test
+
 # unit tests
+
 $ yarn run test
 
 # e2e tests
+
 yarn run pretest:e2e
 yarn run test:e2e
 
 # test coverage
+
 $ yarn run test:cov
+
+```
+
 ```
